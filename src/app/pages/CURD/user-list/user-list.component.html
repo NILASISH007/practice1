@@ -1,0 +1,33 @@
+<h1><strong>CURD Oppration Table</strong></h1>
+<hr>
+<form [formGroup]="userForm">
+  <label>Name</label>
+  <input type="text" for="name" formControlName="name" [(ngModel)]="item.Name">
+  <label>Age</label>
+  <input type="text" for="age" formControlName="age" [(ngModel)]="item.Age">
+
+  <button  *ngIf="!isEdit"type="button" (click)="adduser()">Add</button>
+  <button  *ngIf="isEdit" type="button" (click)="updateUser()">Update</button>
+
+</form>
+
+<table border="2">
+  <tr>
+    <th>Slno.</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor=" let userObj of userList; let i= index ">
+<td>{{i+1}}</td>
+<td>{{userObj.Name}}</td>
+<td>{{userObj.Age}}</td>
+<td>
+  <div class="row">
+    <div class="col"><button type="button" (click)="ediUser(userObj)">Update</button><button type="button" (click)="deleteItem(userObj.id)">Delete</button></div>
+
+  </div>
+</td>
+
+  </tr>
+</table>

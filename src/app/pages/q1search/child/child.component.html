@@ -1,0 +1,22 @@
+<h2>Fruit List</h2>
+<table>
+  <tr>
+    <th>Sl No</th>
+
+    <th>Fruit Name</th>
+    <th>Color</th>
+    <th>Quantity</th>
+    <th>Price</th>
+  </tr>
+ <tr *ngFor=" let fruitObj of furitlist(); let i = index">
+  <td>{{i+1}}</td>
+  <td>{{fruitObj.name}}</td>
+    <td>{{fruitObj.color}}</td>
+    <td>{{fruitObj.quantity}}</td>
+    <td>{{fruitObj.price}}</td>
+
+ </tr>
+</table>
+
+
+

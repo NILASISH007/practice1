@@ -1,0 +1,20 @@
+<table>
+  <tr>
+     <th>Slno.</th>
+    <th>Name</th>
+    <th>Colour</th>
+    <th>Quantity</th>
+    <th>Price</th>
+
+  </tr>
+  <tr *ngFor="let fruitObj of fruitList; let i =index">
+    <td>{{i+1}}</td>
+    <td>{{fruitObj.name}}</td>
+    <td>{{fruitObj.color}}</td>
+    <td>{{fruitObj.quantity}}</td>
+    <td>{{fruitObj.price}}</td>
+  </tr>
+  <tr *ngIf="!fruitList||fruitList.length === 0">
+<td colspan="5" > No data Available</td>
+  </tr>
+</table>

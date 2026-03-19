@@ -1,0 +1,4 @@
+<p>parent-page works!</p>
+
+<h2>Message from child page : {{messageFromChild}}</h2>
+<app-child-page [parentText]="parentMessage" (childText)="receiveMessage($event)"></app-child-page>

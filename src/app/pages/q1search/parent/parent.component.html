@@ -1,0 +1,21 @@
+
+<input type="text" placeholder="Search for name " (keyup)="search($event.target)">
+<app-child [searchTerm]="searchTerm"></app-child>
+
+<h2> Vegetables List</h2>
+<table>
+  <tr>
+    <th>Sl No</th>
+    <th>Vegetable Name</th>
+    <th>Color</th>
+    <th>Quantity</th>
+    <th>Price</th>
+  </tr>
+  <tr *ngFor="let vegObj of getVeggis(); let i = index">
+    <td>{{i+1}}</td>
+    <td>{{vegObj.name}}</td>
+    <td>{{vegObj.color}}</td>
+    <td>{{vegObj.quantity}}</td>
+    <td>{{vegObj.price}}</td>
+  </tr>
+</table>

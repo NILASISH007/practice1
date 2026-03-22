@@ -14,12 +14,12 @@ import { PaginationListComponent } from './pages/pagination/pagination-list/pagi
 
 const routes: Routes = [
   // {path:'', component:ParentComponent}
-  { path: '', component: ReactiveFormsComponent },
+  // { path: '', component: ReactiveFormsComponent },
   // { path: '', component: PipeShowComponent },
   // { path: '', component: ParentRouteComponent },
   // { path: 'child/:text', component: ChildRouteComponent },
   // { path: '', component: ParentPageComponent },
-  // { path: '', component: ConditionalTableComponent },
+  { path: '', component: ConditionalTableComponent },
   //  { path: '', component: UserListComponent },
   //  { path: '', component: PaginationListComponent },
 ];

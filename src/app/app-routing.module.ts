@@ -19,9 +19,9 @@ const routes: Routes = [
   // { path: '', component: ParentRouteComponent },
   // { path: 'child/:text', component: ChildRouteComponent },
   // { path: '', component: ParentPageComponent },
-  { path: '', component: ConditionalTableComponent },
+  // { path: '', component: ConditionalTableComponent },
   //  { path: '', component: UserListComponent },
-  //  { path: '', component: PaginationListComponent },
+   { path: '', component: PaginationListComponent },
 ];
 
 @NgModule({
